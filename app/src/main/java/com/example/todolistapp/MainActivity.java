@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         populateToDoList();
 
         // sort tasks in ascending order according to due dates (earliest due tasks first)
+        // order the tasks by date in ascending order
         Collections.sort(toDoList, (toDo1, toDo2) -> toDo1.getTaskSetDate().compareTo(toDo2.getTaskSetDate()));
         Collections.reverse(toDoList);
 
